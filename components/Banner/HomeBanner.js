@@ -11,8 +11,23 @@ import React from "react";
 export const HomeBanner = () => {
     const videoRef = React.useRef();
     const [playbackRate, setPlaybackRate] = React.useState(0.8);
+    const [isMobileView, setIsMobileView] = React.useState(false);
 
     React.useEffect(() => {
+        setIsMobileView(window.innerWidth <= 768);
+        const handleResize = () => {
+            setIsMobileView(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    React.useEffect(() => {
+        console.log("playbackRate", playbackRate);
         videoRef.current.defaultMuted = true;
         videoRef.current.playbackRate = playbackRate;
     }, [playbackRate]);
@@ -36,8 +51,14 @@ export const HomeBanner = () => {
                     </BadgeGroup>
                 </MotionBTTContainer> */}
                 {/* Appear Second */}
-                <div className="flex">
-                    <div className="flex flex-col justify-center align-middle px-14">
+                <div
+                    className={`flex ${
+                        isMobileView ? "flex-col items-center" : "flex-row"
+                    }`}
+                >
+                    <div
+                        className={`flex flex-col justify-center align-middle px-14 py-12 pt-20`}
+                    >
                         <MotionBTTContainer
                             transition={{ delay: 0.4, duration: 0.5 }}
                         >
