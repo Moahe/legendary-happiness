@@ -62,17 +62,18 @@ export const Footer = () => {
                         <div className="col-span-6">
                             <div className="footer--logo grid gap-8">
                                 <Link href="/">
-                                    <Image
+                                    Företagsikon
+                                    {/* <Image
                                         src="/nutritrack.svg"
                                         alt="logo"
                                         className="h-10 w-auto"
                                         height="25"
                                         width="100"
                                         priority
-                                    />
+                                    /> */}
                                 </Link>
                                 {/* Get Template button; remove if not used */}
-                                <ButtonGroup alignment="left">
+                                {/* <ButtonGroup alignment="left">
                                     <a
                                         role="button"
                                         href="https://avenuelabs.lemonsqueezy.com/checkout/buy/df8ccd46-fa63-4384-b2aa-c4c9b8ad3ef0?embed=1"
@@ -81,10 +82,10 @@ export const Footer = () => {
                                         Get Template
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
                                     </a>
-                                </ButtonGroup>
+                                </ButtonGroup> */}
                             </div>
                         </div>
-                        <div className="col-span-6">
+                        {/* <div className="col-span-6">
                             <div className="footer-menu grid grid-cols-2 md:grid-cols-8 lg:grid-cols-12">
                                 {DATA.map((footerLinks) => (
                                     <div
@@ -119,7 +120,7 @@ export const Footer = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </SectionContainer>
@@ -127,7 +128,7 @@ export const Footer = () => {
             <SectionContainer className="footer-credits relative z-10">
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
+                        {/* © {year} Nutritrack. All rights reserved{" - "}
                         <span className="font-normal">
                             A template by{" "}
                             <Link
@@ -137,7 +138,7 @@ export const Footer = () => {
                             >
                                 Christian Luntok.
                             </Link>
-                        </span>
+                        </span> */}
                     </p>
                 </div>
             </SectionContainer>

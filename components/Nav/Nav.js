@@ -4,13 +4,13 @@ import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
 
 const navigation = [
-    { name: "Features", to: "#features", href: "/#features" },
-    { name: "Testimonials", to: "#testimonials", href: "/#testimonials" },
-    { name: "FAQ?", to: "#faq", href: "/#faq" },
+    { name: "Header link", to: "", href: "" },
+    { name: "Header link", to: "", href: "" },
+    { name: "Header link", to: "", href: "" },
     {
         name: "Contact",
         href: "https://cjluntok.com/",
-        isArrow: true,
+        //isArrow: true,
         target: "_blank"
     }
 ];

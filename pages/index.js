@@ -20,43 +20,29 @@ import {
 export default function Home() {
     return (
         <Layout className="">
-            <SEO
-                title="NutriTrack - Avenue Labs landing page template 🚀"
-                description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
-            />
-            <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
+            <SEO title="🚀" description="Test description" />
+            <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20">
                 {/* { Page Banner } */}
                 <HomeBanner />
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
-                    {/* Features */}
-                    <MotionBTTContainer
+                    {/* <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer id="features" className="features">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>Features</BadgeMessage>
-                            </BadgeGroup>
+                            <BadgeGroup alignment="center"></BadgeGroup>
                             <PageTitle
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Simplify Your Nutrition Journey with NutriTrack
+                                Test
                             </PageTitle>
                             <Content className="text-center" alignment="center">
-                                <p>
-                                    Hey there! Welcome to NutriTrack, the
-                                    ultimate nutrition meal planner powered by
-                                    Notion. We&apos;ve got some awesome features
-                                    lined up to make your nutrition journey a
-                                    piece of cake (pun intended). Check them
-                                    out:
-                                </p>
+                                <p>testtest</p>
                             </Content>
                             <ContentImage />
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Card Container Tabs */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -127,7 +113,6 @@ export default function Home() {
                             </CardGroup>
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Testimonials */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -146,7 +131,6 @@ export default function Home() {
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Accordions */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -165,7 +149,7 @@ export default function Home() {
                             </PageTitle>
                             <Accordion />
                         </SectionContainer>
-                    </MotionBTTContainer>
+                    </MotionBTTContainer> */}
                 </SectionContainer>
             </div>
         </Layout>
