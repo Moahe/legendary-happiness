@@ -76,6 +76,7 @@ export const HomeBanner = () => {
                             autoPlay
                             loop
                             muted
+                            playsInline
                             ref={videoRef}
                             style={{
                                 height: "80vh",
