@@ -21,7 +21,7 @@ export const HomeBanner = () => {
     };
 
     const getRandomValueBetween1and4 = () => {
-        return Math.floor(Math.random() * 3) + 1;
+        return Math.floor(Math.random() * 4) + 1;
     };
 
     return (
