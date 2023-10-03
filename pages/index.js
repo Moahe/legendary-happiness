@@ -26,6 +26,22 @@ export default function Home() {
                 <HomeBanner />
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        style={{
+                            paddingTop: "3vh",
+                            height: "30vh",
+                            width: "30vw",
+                            objectFit: "cover"
+                        }}
+                    >
+                        <source
+                            src={"/banner-video4" + ".mp4"}
+                            type="video/mp4"
+                        />
+                    </video>
                     {/* <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
