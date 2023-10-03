@@ -13,6 +13,7 @@ export const HomeBanner = () => {
     const [playbackRate, setPlaybackRate] = React.useState(0.8);
 
     React.useEffect(() => {
+        videoRef.current.defaultMuted = true;
         videoRef.current.playbackRate = playbackRate;
     }, [playbackRate]);
 
